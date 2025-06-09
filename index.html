@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Employee Management</h1>
+
+    <form id="employee-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="department" placeholder="Department" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="role" placeholder="Role" required>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <button id="export-btn" type="button">Export as CSV</button>
+    <br>
+    <br>
+    <br>
+
+    <input type="text" id="search" placeholder="Search by name or department">
+
+    <table id="employee-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
